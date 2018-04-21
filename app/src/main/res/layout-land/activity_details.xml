@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent" >
+
+    <android.support.v7.widget.Toolbar
+        android:layout_alignParentStart="true"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        app:contentInsetEnd="72dp"
+        app:titleTextColor="@android:color/white"
+        android:layout_height="?android:attr/actionBarSize"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        android:homeAsUpIndicator="@drawable/ic_arrow_back_black_24dp"
+
+        >
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/frame"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="42dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:gravity="start"
+                android:scaleType="centerCrop"
+                android:src="@drawable/udacity" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/view_grad"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="6dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/aditi" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="270dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:elevation="8dp"
+            android:background="@android:color/white">
+
+            <TextView
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:padding="16dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="I am a final year undergraduate student from SVITS Indore, India and a Microsoft Student Partner FY 2017-18. I work mainly in Android App Development. Being an active girl, I'm involved in many technical communities on my campus as well as the local region. Technology, for me, is something that provides a way through which I can contribute to the society. Motivating people is one of the things I like the most and it makes me happy. I love spreading happiness around me."
+                android:textAlignment="center"
+                android:textColor="@android:color/black" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="220dp"
+            android:elevation="8dp"
+            android:clickable="true"
+            android:text="Aditi Soni"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="240dp"
+            android:elevation="8dp"
+            android:clickable="true"
+            android:text="soniaditi380@gmail.com"
+            android:textColor="@android:color/white" />
+
+
+
+
+    </FrameLayout>
+
+
+
+</RelativeLayout>
+</ScrollView>
